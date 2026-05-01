@@ -1,0 +1,76 @@
+Uma regra CSS é o conjunto de instruções que define como um elemento HTML deve aparecer na tela.
+
+Ela é formada por três partes:
+
+Seletor → indica qual elemento será estilizado
+Propriedade → o que será alterado (cor, tamanho, etc.)
+Valor → como será alterado
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo CSS Completo</title>
+
+    <style>
+        /* Animação */
+        @keyframes mudarCor {
+            from {
+                background-color: blue;
+            }
+            to {
+                background-color: green;
+            }
+        }
+
+        /* Regra CSS (seletor, propriedade e valor) */
+        button {
+            padding: 10px;
+            color: white;
+            background-color: blue;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Pseudo-classe */
+        button:hover {
+            animation: mudarCor 1s forwards;
+        }
+
+        /* Pseudo-elemento */
+        button::before {
+            content: "👉 ";
+        }
+
+        /* Extra: exemplo de lista */
+        ul li:first-child {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exemplo de CSS</h1>
+    </header>
+
+    <main>
+        <p>Este é um exemplo de regra CSS com pseudo-classe, pseudo-elemento e animação.</p>
+
+        <button>Clique aqui</button>
+
+        <h2>Lista:</h2>
+        <ul>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>Rodapé da página</p>
+    </footer>
+
+</body>
+</html>
