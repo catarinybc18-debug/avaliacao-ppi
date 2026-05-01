@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: orange;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+        }
+
+        nav {
+            background: #a8b8cc;
+            width: 25%;
+            padding: 20px;
+        }
+
+        section {
+            background: #e6a08c;
+            width: 50%;
+            padding: 20px;
+        }
+
+        aside {
+            background: #b5c86b;
+            width: 25%;
+            padding: 20px;
+        }
+
+        footer {
+            background: goldenrod;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+
+            nav, section, aside {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Layout</h1>
+    </header>
+
+    <main>
+        <nav>Menu</nav>
+        <section>Conteúdo Principal</section>
+        <aside>Barra Lateral</aside>
+    </main>
+
+    <footer>
+        Rodapé
+    </footer>
+
+</body>
+</html>
