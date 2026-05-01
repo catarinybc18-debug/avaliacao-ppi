@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Bandeiras com CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin: 30px 0;
+        }
+
+        /* França (3 colunas verticais) */
+        .franca {
+            display: flex;
+            width: 300px;
+            height: 180px;
+            margin: auto;
+        }
+
+        .franca div {
+            flex: 1;
+        }
+
+        .azul { background-color: blue; }
+        .branco { background-color: white; }
+        .vermelho { background-color: red; }
+
+        /* Alemanha (3 linhas horizontais) */
+        .alemanha {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 180px;
+            margin: auto;
+        }
+
+        .alemanha div {
+            flex: 1;
+        }
+
+        .preto { background-color: black; }
+        .amarelo { background-color: yellow; }
+
+        /* Japão */
+        .japao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 180px;
+            background-color: white;
+            margin: auto;
+        }
+
+        .circulo {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bandeiras com HTML e CSS</h1>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <h2>França</h2>
+            <div class="franca">
+                <div class="azul"></div>
+                <div class="branco"></div>
+                <div class="vermelho"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Alemanha</h2>
+            <div class="alemanha">
+                <div class="preto"></div>
+                <div class="vermelho"></div>
+                <div class="amarelo"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Japão</h2>
+            <div class="japao">
+                <div class="circulo"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
